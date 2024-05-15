@@ -1,0 +1,19 @@
+# Archivos temporales de LaTeX
+*.aux
+*.bbl
+*.blg
+*.dvi
+*.fdb_latexmk
+*.fls
+*.log
+*.nav
+*.out
+*.snm
+*.synctex.gz
+*.toc
+*.vrb
+
+# Archivos de salida
+*.pdf
+*.ps
+*.eps

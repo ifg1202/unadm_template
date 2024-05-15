@@ -1,0 +1,75 @@
+\documentclass{article}
+\usepackage[T1]{fontenc} % Soporte para español
+\usepackage[utf8]{inputenc} % Codificación UTF-8
+\usepackage{graphicx} % Para incluir imágenes
+\usepackage{background} % Para configurar el fondo
+\usepackage{geometry} % Para ajustar la geometría de las páginas
+
+% Configuración del fondo para las páginas regulares
+\backgroundsetup{
+scale=1,
+color=black,
+opacity=0.1,
+angle=0,
+contents={%
+  \includegraphics[width=\paperwidth,height=\paperheight]{fondo_pagina.png}
+  }
+}
+
+\begin{document}
+
+% Página de título con su propio fondo
+{
+\backgroundsetup{
+contents={\includegraphics[width=\paperwidth,height=\paperheight]{fondo_portada.jpg}},
+opacity=1,
+scale=1
+}
+\begin{titlepage}
+\newgeometry{left=3cm,right=3cm,top=2cm,bottom=2cm} % Margenes para la portada
+\centering
+\vspace*{5cm} % Espacio vertical antes del título
+
+{\Huge\bfseries\textbf{Universidad Abierta y a Distancia de México}}\\[1cm]
+{\Large\bfseries\textbf{División de Ciencias Exactas, Ingeniería y Tecnología}}\\[1cm]
+{\Large\bfseries\textbf{Programa educativo: Matemáticas}}\\[0.5cm]
+{\Large\bfseries\textbf{Semestre }}\\[0.5cm]
+{\Large\bfseries\textbf{Unidad : }}\\[0.5cm]
+{\Large\bfseries\textbf{Actividad: }}\\[2cm]
+{\Large\bfseries\textbf{Nombre del estudiante: Iván Fernández Guerrero}}\\[0.5cm]
+{\Large\bfseries\textbf{Matrícula: ES231104533}}\\[0.5cm]
+{\Large\bfseries\textbf{Grupo: }}\\[0.5cm]
+{\Large\bfseries\textbf{Figura Académica: }}\\[2cm]
+{\Large\bfseries\textbf{Ciudad de México, a – de Mes de 2024}}\\[2cm]
+
+\vfill
+\end{titlepage}
+\restoregeometry % Restaura la geometría de la página
+} % Fin del grupo de la portada
+
+% Contenido del documento
+\section{Introducción}
+En esta sección, se presenta una breve descripción del tema, los objetivos del trabajo y el contexto en el cual se desarrollará.
+
+\newpage
+\section{Desarrollo}
+Esta sección contiene el desarrollo principal del tema, incluyendo análisis, discusión y resultados obtenidos durante la investigación.
+
+
+\newpage
+\section{Conclusión}
+En esta sección se resumen los puntos principales del trabajo, se destacan los hallazgos más relevantes y se proponen posibles líneas de investigación futura.
+
+\newpage
+\section{Referencias}
+Aquí se listan todas las fuentes y referencias bibliográficas utilizadas durante la elaboración del trabajo.
+
+\begin{thebibliography}{9}
+    \bibitem{referencia1} Autor, Título del libro, Editorial, Año.
+    \bibitem{referencia2} Autor, "Título del artículo", Nombre de la revista, Volumen (Año), Páginas.
+    \bibitem{referencia3} Autor, "Título del artículo en línea", Sitio web, Fecha de consulta.
+\end{thebibliography}
+
+\newpage
+
+\end{document}
